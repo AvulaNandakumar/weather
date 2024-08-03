@@ -6,7 +6,11 @@ const app = express();
 app.listen(3000, () => console.log("server is running"));
 
 //calling api
-app.get("/weather/:city/",(req, res) => {
+
+app.get("/",(req,res)=>{
+res.send("add city name as a path parameter at the the end.");
+});
+app.get("/:city/",(req, res) => {
 
     let { city } = req.params;
     const accessKey = "311e76a7dc052d20dbfa31225e764b1a";
