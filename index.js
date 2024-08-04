@@ -1,15 +1,14 @@
 const request = require("request");
 const express = require("express");
 const app = express();
+const path=require("path");
 
 //starting server 
 app.listen(3000, () => console.log("server is running"));
 
 //calling api
 
-app.get("/",(req,res)=>{
-res.send("add city name as a path parameter at the the end.");
-});
+app.use("/",express.static(path.join(__dirname,"/frontend")));
 app.get("/:city/",(req, res) => {
 
     let { city } = req.params;
@@ -20,6 +19,6 @@ app.get("/:city/",(req, res) => {
             console.log(err);
         }
         console.log(response.statusCode, response.statusMessage);
-        res.send(JSON.parse(response.body));
+        res.send(response.body);
     });
 });
