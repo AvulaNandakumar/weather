@@ -1,42 +1,65 @@
-#city{
+#city {
     height: 20px;
     width: 200px;
     margin-right: 20px;
 }
-#search{
+
+#search {
     height: 26px;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-#search-container{
+
+#search-container {
     display: flex;
     justify-content: center;
     padding-top: 20px;
 }
-table,td,th{
+
+table,
+td,
+th {
     border: 1px solid black;
     text-align: center;
 }
-table{
-    background-color:transparent;
-    
+
+table {
+    background-color: transparent;
+
 }
-td,th{
+
+td,
+th {
     background-color: transparent;
     padding: 5px;
 }
-#result{
+
+#result {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-h3{
+
+h3 {
     text-align: center;
     margin-top: 50px;
 }
-body{
+body {
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg");
-background-size: cover;
+    background-size: cover;
     height: 100vh;
+}
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
 }
