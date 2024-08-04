@@ -8,7 +8,7 @@ app.listen(3000, () => console.log("server is running"));
 
 //calling api
 
-app.use("/",express.static(path.join(__dirname,"/frontend")));
+app.use("/",express.static(path.join(__dirname,"index.html")));
 app.get("/:city/",(req, res) => {
 
     let { city } = req.params;
