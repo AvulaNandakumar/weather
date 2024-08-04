@@ -7,10 +7,7 @@ const path=require("path");
 app.listen(3000, () => console.log("server is running"));
 
 //calling api
-
-<<<<<<< HEAD
 app.use("/",express.static(path.join(__dirname,"/frontend")));
-=======
 app.get("/:city/",(req, res) => {
 
     let { city } = req.params;
