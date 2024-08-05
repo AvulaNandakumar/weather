@@ -47,8 +47,8 @@ h3 {
     margin-top: 50px;
 }
 body {
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg");
-    background-size: cover;
+   padding: 0px;
+    margin: 0px;
     height: 100vh;
 }
 #result{
