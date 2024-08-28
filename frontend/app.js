@@ -27,18 +27,3 @@ searchBtnEl.addEventListener("click", async () => {
     wind.textContent = data.wind.speed;
     container.appendChild(result);
 });
-
-
-VANTA.CLOUDS({
-  el: "body",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  skyColor: 0x3cc1f4,
-  cloudShadowColor: 0x587d9f,
-  sunColor: 0xd9ce64,
-  sunGlareColor: 0xd97d24,
-  sunlightColor: 0xe8c467
-})
