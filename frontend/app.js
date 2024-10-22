@@ -1,3 +1,5 @@
+const { application, json } = require("express");
+
 let cityEl = document.getElementById("city");
 let searchBtnEl = document.getElementById("search");
 let cityName = document.getElementById("city-name");
@@ -15,7 +17,13 @@ container.removeChild(result);
 
 searchBtnEl.addEventListener("click", async () => {
 
-    const response = await fetch(`/${city.value}`)
+    const response = await fetch(`/${city.value}`,{
+        method:POST,
+        headers:{
+        Accept:"application/json";
+        "Content-Type":"application/json"},
+        body:city.value;
+    });
     const data = await response.json()
 
     cityName.textContent = data.name;
